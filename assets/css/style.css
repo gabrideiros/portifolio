@@ -1,0 +1,2746 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial-Regular';
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.15);
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area img {
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul a {
+    font-family: 'Arial-Bold';
+    font-size: 15px;
+    color: rgb(63, 61, 86);
+    text-decoration: none;
+}
+
+.navbar ul a:hover {
+    color: #000;
+    transition: all ease .5s;
+}
+
+.navbar ul a:not(.first-item) {
+    margin-left: 30px;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    padding: 170px 0;
+}
+
+.content-area {
+    display: flex;
+}
+
+#principal .container .content-area .right-column,
+#principal .container .content-area .left-column {
+    width: 50%;
+}
+
+#principal .container .content-area .right-column .title,
+#principal .container .content-area .right-column .subtitle,
+#principal .container .content-area .right-column .description {
+    color:rgb(63, 61, 86);
+}
+
+#principal .container .content-area .right-column .title {
+    width: 90%;
+    font-size: 60px;
+    margin-top: 14px;
+    font-family: 'Arial-Bold';
+}
+
+#principal .container .content-area .right-column .subtitle {
+    width: 90%;
+    font-size: 35px;
+}
+
+#principal .container .content-area .right-column .description {
+    margin-top: 14px;
+    font-size: 25px;
+}
+
+#principal .container .content-area .right-column a {
+    display: block;
+    width: 120px;
+    padding: 12px 30px; 
+    margin-top: 25px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.15);
+    background: linear-gradient(to right, #aef5e4, #00c4f5);
+
+}
+
+#principal .container .content-area .right-column a:hover {
+    background: linear-gradient(to left, #aef5e4, #00c4f5);
+    transition: all ease .5s;
+}
+
+#principal .container .content-area .left-column img {
+    margin-top: -75px;
+    margin-left: 50px;
+    height: 380px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+#about .element img {
+    position: absolute;
+    left: -85px;
+    height: 170px;
+}
+
+#about .other-element img {
+    position: absolute;
+    margin-top: 495px;
+    margin-left: -300px;
+    height: 135px;
+}
+
+#about .container .content-area {
+    display: flex;
+    padding: 140px 0;
+}
+
+#about .container .content-area .right-column {
+    width: 40%;
+}
+
+#about .container .content-area .left-column {
+    width: 56%;
+}
+
+#about .container .content-area .right-column img {
+    height: 400px;
+}
+
+#about .container .content-area .left-column .title {
+    width: 90%;
+    font-size: 40px;
+    font-family: 'Arial-Bold';
+    color:rgb(63, 61, 86);
+}
+
+#about .container .content-area .left-column .description {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(139, 139, 167);
+}
+
+#about .container .content-area .left-column .description b {
+    font-family: 'Arial-Bold';
+    color: rgb(63, 61, 86);
+}
+
+#about .container .content-area .left-column .description p:nth-child(2) {
+    margin-top: 20px;
+}
+
+#about .container .content-area .left-column a {
+    display: block;
+    width: 120px;
+    padding: 12px 30px; 
+    margin-top: 25px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.15);
+    background: linear-gradient(to right, #aef5e4, #00c4f5);
+}
+
+#about .container .content-area .left-column a:hover {
+    background: linear-gradient(to left, #aef5e4, #00c4f5);
+    transition: all ease .5s;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+}
+
+#projects .container .content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 0;
+}
+
+#projects .container .content-area .title {
+    font-size: 40px;
+    font-family: 'Arial-Bold';
+    color:rgb(63, 61, 86);
+    text-align: center;
+}
+
+#projects .container .content-area .description {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 25px 0;
+    color: rgb(139, 139, 167);
+}
+
+
+#projects .container .content-area .bar ul {
+    display: flex;
+}
+
+#projects .container .content-area .bar ul li {
+    color:rgb(63, 61, 86);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#projects .container .content-area .bar ul li:nth-child(1) {
+    margin-left: 420px;
+}
+
+#projects .container .content-area .bar ul li:not(:nth-child(1)) {
+    margin-left: 25px;
+}
+
+#projects .container .content-area .bar ul .active {
+    color: #00c4f5;
+}
+
+#projects .container .content-area .itens {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120%;
+    height: 120%;
+}
+
+#projects .container .content-area .itens .modal {
+    width: 555px;
+    height: 370px;
+    background-color: rgb(248, 245, 255);
+    border-radius: 5px;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.30);
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+#projects .container .content-area .itens .modal .effects {
+    overflow: hidden;
+    height: 680px;
+    width: 695px;
+    position: relative;
+    transition: .5s;
+}
+
+#projects .container .content-area .itens .modal .effects:nth-child(1):after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 28%;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-140%, -50%);
+    background-color: rgba(36, 184, 230, 0.6);
+    border-radius: 100%;
+    transition: .4s;
+}
+
+#projects .container .content-area .itens .modal .effects:hover:after{
+    transform: translate(-50%, -50%);
+}
+
+#projects .container .content-area .itens .modal .effects:hover video {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+#projects .container .content-area .itens .modal .effects i {
+    position: absolute;
+    z-index: 2;
+    top: 26%;
+    left: 41%;
+    transform: translate(-2000px, -50%);
+    color: #fff;
+    transition: .4s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+}
+
+#projects .container .content-area .itens .modal .effects:hover i {
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease;
+}
+
+
+#projects .preview-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    width: 100%;
+    opacity: 0;    
+    pointer-events: none;
+}
+
+
+#projects .preview-box.open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+
+}
+
+#projects .preview-box .background {
+    position: absolute;
+    background: black;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.8);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#projects .preview-box .background .preview-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#projects .preview-box .slide {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%, -50);
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  #projects .preview-box .prev {
+    left: 100px;
+}
+
+
+#projects .preview-box .next {
+    right: 100px;
+}
+
+#projects .preview-box .close {
+    top: 50px;
+    right: 208px;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+}
+
+#services .element img {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 1020px;
+    height: 370px;
+}
+
+#services .container .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 140px 0;
+}
+
+#services .container .content-area .title {
+    font-size: 40px;
+    font-family: 'Arial-Bold';
+    color:rgb(63, 61, 86);
+    text-align: center;
+}
+
+#services .container .content-area .description {
+    font-size: 20px;
+    width: 950px;
+    text-align: center;
+    margin: 20px 0 25px 0;
+    color: rgb(139, 139, 167);
+    line-height: 20px;
+}
+
+#services .container .content-area .modals {
+    display: flex;
+}
+
+#services .container .content-area .modals .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    height: 394px;
+    background-color: #f9f9fd;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: all 0.4s ease 0s;
+}
+
+#services .container .content-area .modals .modal:hover {
+    box-shadow: 0 15px 30px rgba(58, 128, 207, 0.3);
+    background: #fff;
+}
+
+
+#services .container .content-area .modals .modal:nth-child(2) {
+    margin-left: 25px;
+}
+
+#services .container .content-area .modals .modal .type-of-service {
+    color: rgb(63, 61, 86);
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+#qualitys {
+    display: flex;
+    justify-content: center;
+}
+
+#qualitys .element img {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -240px;
+    height: 320px;
+}
+
+#qualitys .container .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 140px 0;
+}
+
+#qualitys .container .content-area .title {
+    font-size: 40px;
+    font-family: 'Arial-Bold';
+    color:rgb(63, 61, 86);
+    text-align: center;
+}
+
+#qualitys .container .content-area .description {
+    font-size: 20px;
+    width: 950px;
+    text-align: center;
+    margin: 20px 0 25px 0;
+    color: rgb(139, 139, 167);
+    line-height: 20px;
+}
+
+#qualitys .container .content-area .modals {
+    display: flex;
+}
+
+#qualitys .container .content-area .modals .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    height: 364px;
+    background: #f9f9fd;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: all 0.4s ease 0s;
+}
+
+#qualitys .container .content-area .modals .modal .fastwork {
+    margin-right: 30px;
+}
+
+#qualitys .container .content-area .modals .modal:hover {
+    box-shadow: 0 15px 30px rgba(58, 128, 207, 0.3);
+    background: #fff;
+}
+
+#qualitys .container .content-area .modals .modal:nth-child(2),
+#qualitys .container .content-area .modals .modal:nth-child(3) {
+    margin-left: 25px;
+}
+
+#qualitys .container .content-area .modals .modal .type-of-quality {
+    color: rgb(63, 61, 86);
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .container .content-area {
+    display: flex;
+    padding: 140px 0;
+}
+
+#contact .container .content-area .left-column {
+    width: 45%;
+}
+
+#contact .container .content-area .right-column {
+    width: 55%;
+}
+
+#contact .container .content-area .left-column img {
+    margin-top: -110px;
+    margin-left: 50px;
+    height: 500px;
+}
+
+#contact .container .content-area .right-column .title {
+    width: 90%;
+    font-size: 40px;
+    font-family: 'Arial-Bold';
+    color:rgb(63, 61, 86);
+}
+
+#contact .container .content-area .right-column .description {
+    margin-top: 14px;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(139, 139, 167);
+}
+
+
+#contact .container .content-area .right-column .description b {
+    font-size: 18px;
+    font-family: 'Arial-Bold';
+    color: rgb(108, 108, 119);
+}
+
+#contact .container .content-area .right-column .description p:nth-child(2) {
+    margin-top: 20px;
+}
+
+#contact .container .content-area .right-column .discord {
+    display: inline-flex;
+    width: 120px;
+    padding: 12px 30px; 
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.15);
+    background: linear-gradient(to right, #aef5e4, #00c4f5);
+    cursor: pointer;
+}
+
+#contact .container .content-area .right-column .discord img {
+    width: 20px;
+}
+
+#contact .container .content-area .right-column .discord span {
+    font-weight: 600;
+    color: white;
+}
+
+#contact .container .content-area .right-column .discord:hover {
+    background: linear-gradient(to left, #aef5e4, #00c4f5);
+    transition: all ease .5s;
+}
+
+#contact .container .content-area .right-column .email {
+    display: inline-block;
+    width: 195px;
+    padding: 12px 30px; 
+    margin: 25px 0 0 10px;
+    font-weight: 600;
+    color:rgb(63, 61, 86);
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(63, 61, 86);
+    box-shadow: 0 6px 10px -6px rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+#contact .container .content-area .right-column .email:hover {
+    background: linear-gradient(to right, rgb(41, 40, 51), rgb(73, 71, 99));
+    color: white;
+    transition: all ease .5s;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+footer .content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .content-area .name {
+    font-size: 25px;
+    font-family: 'Arial-Bold';
+    text-align: center;
+    color:rgb(63, 61, 86);
+    margin-bottom: 15px;
+}
+
+footer .content-area .social {
+    display: flex;
+    justify-content: center;
+}
+
+footer .content-area .social img:nth-child(2),
+footer .content-area .social img:nth-child(3) {
+    margin-left: 25px;
+}
+
+footer .content-area .social a {
+    text-decoration: none;
+}
+
+footer .content-area .social img {
+    height: 20px;
+}
+
+footer .content-area .social .discord .img {
+    color: gray;
+}
+
+
+footer .content-area .copyright {
+    font-size: 15px;
+    text-align: center;
+    color:rgb(63, 61, 86);
+    margin-top: 15px;
+}
+
+@font-face {
+    font-family: "Arial-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/arial.ttf");
+}
+
+@font-face {
+    font-family: "Arial-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/arial-bold.ttf");
+}
+
+/* Responsividade */
+@media (min-width: 801px) and (max-width: 1109px) {
+    header .container,
+    main .container {
+        padding: 0 30px;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 40px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 18px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: -20px;
+        height: 310px;
+    }
+
+    #about .container .content-area .left-column .title {
+        font-size: 35px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        height: 350px;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 35px;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -95px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 460px;
+    }
+
+    #services .container .content-area .title {
+        font-size: 35px;
+    }
+
+    #services .container .content-area .description {
+        font-size: 15px;
+        width: 850px;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 300px;
+    }
+
+    #services .element img {
+        margin-left: 880px;
+        height: 250px;
+    }
+
+    #qualitys .container .content-area .title {
+        font-size: 35px;
+    }
+
+    #qualitys .container .content-area .description {
+        font-size: 15px;
+        width: 850px;
+    }
+
+    #qualitys .container .content-area .modals .modal img {
+        height: 150px;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 250px;
+    }
+
+    #qualitys .element img {
+        margin-left: -110px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 533px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 43px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -25px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 305px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 97%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        top: 970px;
+        left: 650px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -335px;
+        width: 90%;
+
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 480px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #services .container .content-area .modals .modal {
+        margin-left: 65px;
+    }
+
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 70px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 90px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 534px) and (max-width: 600px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 43px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: 5px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 305px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 97%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        top: 970px;
+        left: 650px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -305px;
+        width: 90%;
+
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 550px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 90px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 130px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: 80px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 305px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 97%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        top: 970px;
+        left: 650px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -230px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 710px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 185px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 210px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 125px;
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: 80px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 305px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 97%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        top: 970px;
+        left: 650px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -217px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 745px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 200px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 230px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 135px;
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -55px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 200px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 95%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        display: none;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -387px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 13px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 10px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 265px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 260px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 4px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 260px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 4px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 205px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 205px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 30px;
+        margin-top: 45px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -30px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 200px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 93%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        display: none;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -377px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 15px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 10px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 320px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 35px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 260px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 270px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 25px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 260px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 260px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 40px;
+        margin-top: 45px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 384px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -30px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 200px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 93%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        display: none;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -377px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 15px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 10px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 325px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 35px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 260px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 35px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 270px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 30px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+        width: 92%;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 270px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 270px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 40px;
+        margin-top: 45px;
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 385px) and (max-width: 414px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -10px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 200px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 93%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+        width: 95%;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        display: none;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -370px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 16px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 11px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 355px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 35px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 35px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+        width: 93%;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 300px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 60px;
+        margin-top: 65px;
+        height: 310px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 424px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: -10px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 200px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 93%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+        width: 95%;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        display: none;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -370px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 16px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 11px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 366px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 40px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 40px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+        width: 93%;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 310px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 310px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 60px;
+        margin-top: 65px;
+        height: 310px;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 540px) {
+    header .container,
+    main {
+        padding: 0 20px;
+    }
+
+    header .container .menu .logo-area img {
+        height: 50px;
+    }
+
+    header .container .menu .menu-opener {
+        display: flex;
+    }
+
+    header .container .menu .navbar {
+        display: none;
+    }
+
+    #principal .container {
+        margin-bottom: -70px;
+    }
+
+    #principal .container .content-area {
+        flex-direction: column;
+    }
+
+    #principal .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #principal .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #principal .container .content-area .right-column .title {
+        font-size: 45px;
+    }
+
+    #principal .container .content-area .right-column .description {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #principal .container .content-area .left-column {
+        margin-left: 30px;
+    }
+
+    #principal .container .content-area .left-column img {
+        margin-top: 110px;
+        height: 230px;
+    }
+
+    #about .container .content-area {
+        flex-direction: column;
+    }
+
+    #about .container .content-area .left-column {
+        width: 93%;
+    }
+
+    #about .container .content-area .right-column {
+        width: 100%;
+    }
+
+    #about .container .content-area .left-column .title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+
+    #about .container .content-area .left-column .description {
+        font-size: 15px;
+        width: 95%;
+    }
+
+    #about .container .content-area .right-column img {
+        display: none;
+    }
+
+    #about .element img {
+        left: -100px;
+    }
+
+    #about .other-element img {
+        top: 920px;
+    }
+
+    #projects {
+        margin-top: -90px;
+    }
+
+    #projects .container .content-area .title {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .description {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar {
+        margin-left: -313px;
+        width: 90%;
+    }
+
+    #projects .container .content-area .bar ul a {
+        font-size: 16px;
+    }
+
+    #projects .container .content-area .bar ul a:not(:nth-child(1)) {
+        margin-left: 11px;
+    }
+
+    #projects .container .content-area .modals .modal {
+        width: 485px;
+    }
+
+    #projects .container .content-area .modals .modal:nth-child(2),
+    #projects .container .content-area .modals .modal:nth-child(4) {
+        margin-left: -1px;
+    }
+
+    #services .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+        width: 97%;
+    }
+
+    #services .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 96%;
+    }
+
+    #services .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #services .container .content-area .modals .modal,
+    #services .container .content-area .modals .modal:nth-child(2) {
+        margin-left: 95px;
+    }
+
+    #qualitys .container .content-area .title {
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    #qualitys .container .content-area .description {
+        margin-left: -35px;
+        font-size: 15px;
+        width: 97%;
+    }
+
+    #qualitys .element {
+        display: none;
+    }
+
+    #qualitys .container .content-area .modals .modal {
+        width: 290px;
+        height: 370px;
+    }
+
+    #qualitys .container .content-area .modals .modal,
+    #qualitys .container .content-area .modals .modal:nth-child(2),
+    #qualitys .container .content-area .modals .modal:nth-child(3) {
+        margin-left: 100px;
+    }
+
+    #contact {
+        margin-left: -10px;
+    }
+
+    #contact .container .content-area {
+        flex-direction: column;
+    }
+
+    #contact .container .content-area .right-column {
+        width: 97%;
+    }
+
+    #contact .container .content-area .left-column {
+        width: 100%;
+    }
+
+    #contact .container .content-area .right-column .title {
+        font-size: 37px;
+        margin-left: 10px;
+    }
+
+    #contact .container .content-area .right-column .description {
+        font-size: 15px;
+        margin-left: 10px;
+        width: 95%;
+    }
+
+    #contact .container .content-area .right-column .discord {
+        margin-left: 10px;
+        width: 425px;
+    }
+
+    #contact .container .content-area .right-column .email {
+        width: 425px;
+        margin-top: 10px;
+    }
+
+    #contact .container .content-area .left-column img {
+        margin-left: 105px;
+        margin-top: 65px;
+        height: 340px;
+    }
+}
